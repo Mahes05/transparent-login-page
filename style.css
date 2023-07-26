@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.page{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.login-form{
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+    color: #fff;
+    border-radius: 10px;
+    padding: 50px 30px;
+    box-shadow: 7px 7px 60px #000;
+}
+.login-form h1{
+    text-align: center;
+    margin-bottom: .7rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.control input{
+    width: 100%;
+    padding: 8px;
+    display: block;
+    margin: .5rem 0;
+    outline: none;
+    border: none;
+}
+.control input[type="submit"]{
+    background-color: crimson;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    opacity: .7;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+.login-form .link a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.login-form .link{
+    text-align: center;
+}
+.control input[type="submit"]:hover{
+    opacity: 1;
+}
+@media screen and (max-width:420px){
+    .login-form{
+        width: 90%;
+    }
+    .login-form h1{
+        font-size: 1em;
+    }
+    .control input{
+        padding: 6px;
+        margin: .2rem 0;
+    }
+}
